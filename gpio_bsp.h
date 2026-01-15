@@ -15,7 +15,7 @@
 #define example_out_gpio_4 (gpio_num_t)4
 #define example_in_gpio_5  (gpio_num_t)5
 
-#define BAT_PIN (gpio_num_t)16    //BAT_PIN
+#define BAT_PIN (gpio_num_t)16    //BAT PIN
 
 void esp32_gpio_init(void);
 void BAT_ON(void);
