@@ -6,16 +6,16 @@
 
 #ifndef EXAMPLE_USE_TOUCH
 
-#define SCL 48
-#define SDA 47
+#define I2C_MASTER_SCL_IO 48
+#define I2C_MASTER_SDA_IO 47
 
 void I2C_master_Init(void)
 {
   i2c_config_t conf = 
   {
     .mode = I2C_MODE_MASTER,
-    .sda_io_num = SDA,         // Configure the GPIO for SDA
-    .scl_io_num = SCL,         // Configure the GPIO for SCL
+    .sda_io_num = I2C_MASTER_SDA_IO,         // Configure the GPIO for SDA
+    .scl_io_num = I2C_MASTER_SCL_IO,         // Configure the GPIO for SCL
     .sda_pullup_en = GPIO_PULLUP_ENABLE,
     .scl_pullup_en = GPIO_PULLUP_ENABLE,
     .master = {
